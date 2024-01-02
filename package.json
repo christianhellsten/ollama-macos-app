@@ -5,6 +5,7 @@
   "type": "module",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "tauri": "tauri",
     "server": "node scripts/server.js",
     "test": "node --test --test-reporter=spec",
     "test:only": "node  --test --test-reporter=spec --test-only",
@@ -12,10 +13,12 @@
     "format": "prettier --write \"**/*.{js,html,scss}\"",
     "lint-js": "eslint \"**/*.js\" --fix",
     "lint-css": "stylelint \"**/*.scss\" --fix",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.3",
+    "@tauri-apps/cli": "^1.5.9",
     "cssnano": "^6.0.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
